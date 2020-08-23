@@ -33,6 +33,13 @@ func superAdd(numbers ...int) int {
 	return total
 }
 
+func canIDrink(age int) bool {
+	if koreanAge := age + 2; koreanAge < 18 {
+		return false
+	}
+	return true
+}
+
 func main() {
 	fmt.Println(multiply(123, 4234))
 
@@ -46,4 +53,6 @@ func main() {
 
 	totalResult := superAdd(10, 20, 30, 40, 50)
 	fmt.Println(totalResult)
+
+	fmt.Println(canIDrink(16))
 }
