@@ -25,6 +25,14 @@ func repeatMe(words ...string) {
 	fmt.Println(words)
 }
 
+func superAdd(numbers ...int) int {
+	total := 0
+	for _, number := range numbers {
+		total += number
+	}
+	return total
+}
+
 func main() {
 	fmt.Println(multiply(123, 4234))
 
@@ -35,4 +43,7 @@ func main() {
 
 	banksaladLength, banksaladUpperName := nakedLenAndUpper("banksalad")
 	fmt.Println(banksaladLength, banksaladUpperName)
+
+	totalResult := superAdd(10, 20, 30, 40, 50)
+	fmt.Println(totalResult)
 }
