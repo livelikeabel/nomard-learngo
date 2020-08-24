@@ -71,4 +71,11 @@ func main() {
 	*b = 4
 	fmt.Println(&a, b)
 	fmt.Println(*b)
+
+	names := [5]string{"abel", "jin", "kamake"}
+	fmt.Println(names)
+
+	foods := []string{"pizza"}
+	foods = append(foods, "taco")
+	fmt.Println(foods)
 }
