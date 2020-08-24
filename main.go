@@ -50,6 +50,12 @@ func canIDrinkWithSwitch(age int) bool {
 	return false
 }
 
+type person struct {
+	name    string
+	age     int
+	favFood []string
+}
+
 func main() {
 	fmt.Println(multiply(123, 4234))
 
@@ -87,4 +93,9 @@ func main() {
 	for key, value := range abel {
 		fmt.Println(key, value)
 	}
+
+	abelsFavFood := []string{"taco", "pasta"}
+	// abelStruct := person{"abel", 24, abelsFavFood}
+	abelStruct := person{name: "abel", age: 24, favFood: abelsFavFood}
+	fmt.Println(abelStruct)
 }
