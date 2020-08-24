@@ -65,4 +65,10 @@ func main() {
 	fmt.Println(totalResult)
 
 	fmt.Println(canIDrink(16))
+
+	a := 2
+	b := &a
+	*b = 4
+	fmt.Println(&a, b)
+	fmt.Println(*b)
 }
