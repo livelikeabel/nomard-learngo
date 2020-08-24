@@ -66,16 +66,25 @@ func main() {
 
 	fmt.Println(canIDrink(16))
 
+	// pointer
 	a := 2
 	b := &a
 	*b = 4
 	fmt.Println(&a, b)
 	fmt.Println(*b)
 
+	// array
 	names := [5]string{"abel", "jin", "kamake"}
 	fmt.Println(names)
 
+	// slice
 	foods := []string{"pizza"}
 	foods = append(foods, "taco")
 	fmt.Println(foods)
+
+	// map
+	abel := map[string]string{"name": "abel", "age": "24"}
+	for key, value := range abel {
+		fmt.Println(key, value)
+	}
 }
